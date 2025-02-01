@@ -21,6 +21,7 @@ app.use(cors({
 
 
 // Routes
+app.get('/',(req,res)=>{res.send("Hello World")});
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/booking', require('./routes/bookingRoutes'));
 app.use('/api/destinations', require('./routes/destinationRoutes'));
